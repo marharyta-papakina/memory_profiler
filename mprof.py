@@ -882,6 +882,7 @@ such file in the current directory."""
         for child, values in prof["children"].items():
             child_peak = max([ mem_ts[0] for mem_ts in values ])
             print("  Child {}\t\t\t{:.3f} MiB".format(child, child_peak))
+    return filenames 
         
 
 def get_profiles(args):
